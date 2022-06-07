@@ -1,0 +1,8 @@
+font:
+  normal:
+    family: CaskaydiaCove Nerd Font Mono
+window:
+  opacity: 0.85
+cursor:
+  style:
+    shape: Beam
