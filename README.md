@@ -11,4 +11,4 @@
 >
 
 ### Note: if you have a terminal that support transparency natively, like in this case Im using Alacritty
-### If you want trasnparency and your Dekstop Environment or Window Manager dont have any, you must install one, in my case I have installed picom with his respectively configuration
+### If you want trasnparency and your Dekstop Environment or Window Manager dont have any, you must install one, in my case I use qtile and have installed picom with his respectively configuration
