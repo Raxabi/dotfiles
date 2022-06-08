@@ -10,5 +10,5 @@
 > **https://github.com/alacritty/alacritty/blob/master/alacritty.yml**
 >
 
-### Note: if you have a terminal that support transparency natively, like in this case im using Alacritty
-### I recommed you not install picom only for transparency, basically because aren't needed
+### Note: if you have a terminal that support transparency natively, like in this case Im using Alacritty
+### If you want trasnparency and your Dekstop Environment or Window Manager dont have any, you must install one, in my case I have installed picom with his respectively configuration
