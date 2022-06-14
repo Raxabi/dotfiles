@@ -95,5 +95,6 @@ alias lsdid='sudo blkid'
 alias leer='redshift -O 4500 -P'
 alias cleno='clear && neofetch'
 alias xampp='sudo /opt/lampp/managerxamp.run'
+alias copy='xclip -selection clipboard'
 
 neofetch
