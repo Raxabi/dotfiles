@@ -7,12 +7,12 @@ from libqtile.lazy import lazy
 
 mod = "mod4"
 alt = "mod1"
-terminal = "kitty"
+terminal = "alacritty"
 
 initial_config = [
     "setxkbmap es",
-    "redshift -O 4500 -P",
-    "feh --bg-scale /home/raxabi/.config/qtile/ArchWallpaper.png",
+    "redshift -O 3700 -P",
+    "feh --bg-scale /home/raxabi/.config/qtile/images/mountains.jpg",
     "picom &"
 ]
 
@@ -59,6 +59,9 @@ keys = [
 
     # Web
     Key([mod], "f", lazy.spawn("firefox")),
+    
+    # Google Chrome
+    Key([mod, "shift"], "f", lazy.spawn("google-chrome-stable")),
 
     # Visual Studio Code
     Key([mod], "c", lazy.spawn("code")),
@@ -115,7 +118,7 @@ layouts = [
 ]
 
 widget_defaults = dict(
-    font='CaskaydiaCove Nerd Font Mono',
+    font='JetBrainsMono Nerd Font Mono',
     fontsize=14,
     padding=3,
 )
@@ -128,8 +131,6 @@ screens = [
                 widget.GroupBox(
                     fontsize = 30,
                     highlight_method = 'block',
-                    #active = "#fffff",
-                    #inactive = "#d1d1d1",
                     disable_drag = True,
                 ),
                 widget.WindowName(),
@@ -139,33 +140,15 @@ screens = [
                     text = "",
                     fontsize = 70,
                     padding = -13,
-                    foreground = "#6d00ac"
-                ),
-                widget.TextBox(
-                    text = "",
-                    fontsize = 30,
-                    background = "#6d00ac" 
-                ),
-                widget.TextBox(
-                    text = "Raxabi",
-                    name="author",
-                    background = "#6d00ac",
-                    #foreground = "#007c8a"
-                ),
-                widget.TextBox(
-                    text = "",
-                    fontsize = 70,
-                    padding = -13,
-                    background = "#6d00ac",
                     foreground = "#007cc8"
-                    ),
+                ),
                 widget.TextBox(
                     text = "",
                     fontsize = "20",
                     background = "#007cc8"
                 ),
                 widget.Net(
-                    format = "enp34s0: {down} ↓↑ {up}",
+                    format = "enp34s0: {down} ↓↑{up}",
                     background = "#007cc8"
                 ),
                 widget.TextBox(
@@ -186,24 +169,24 @@ screens = [
                 widget.TextBox(
                     text = "",
                     background = "#00569f",
-                    foreground = "#003c9f",
+                    foreground = "#c24d33",
                     fontsize = 70,
                     padding = -13
                 ),
                 widget.TextBox(
                     text = "",
-                    background = "#003c9f",
+                    background = "#c24d33",
                     foreground = "#ffffff",
                     fontsize = 30,
                 ),
                 widget.Clock(
                     format='%d-%m-%Y %A | %H:%M %p',
-                    background = "#003c9f",
+                    background = "#c24d33",
                     foreground = "#ffffff"
                 ),
                 widget.TextBox(
                     text = "",
-                    background = "#003c9f",
+                    background = "#c24d33",
                     foreground = "#f0f36d",
                     fontsize = 70,
                     padding = -13
@@ -229,6 +212,7 @@ screens = [
                 widget.CPU(
                     background = "#f0f36d",
                     foreground = "#000000",
+                    format = "CPU {load_percent}%",
                     margin = 10
                 ),
                 widget.TextBox(
