@@ -11,7 +11,7 @@ terminal = "alacritty"
 
 initial_config = [
     "setxkbmap es",
-    "redshift -O 3700 -P",
+    "redshift -O 4200 -P",
     "feh --bg-scale /home/raxabi/.config/qtile/images/mountains.jpg",
     "picom &"
 ]
@@ -143,12 +143,12 @@ screens = [
                     foreground = "#007cc8"
                 ),
                 widget.TextBox(
-                    text = "",
-                    fontsize = "20",
+                    text = "",
+                    fontsize = "28",
                     background = "#007cc8"
                 ),
                 widget.Net(
-                    format = "enp34s0: {down} ↓↑{up}",
+                    format = "enp34s0: {down} ↓↑ {up}",
                     background = "#007cc8"
                 ),
                 widget.TextBox(
