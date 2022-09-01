@@ -2,9 +2,7 @@
 
 ## Based on https://github.com/antoniosarosi/dotfiles/tree/master/.config/qtile by Antonio Sarosi
 
-> But my config is very much simple xd
-
 **Warning**: The config may be affected by the screen resolution
 
-## If u want to modify, just fork it
+## If u want to use this condfiguration, just clone this repo and try in your PC! 
 
