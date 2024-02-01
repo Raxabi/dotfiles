@@ -1,0 +1,13 @@
+{
+    "configurations": [{
+        "name": "Linux",
+        "includePath": [
+            "${default}",
+            "${workspaceFolder}/includes",
+            "/usr/include/freetype2"
+        ],
+        "cStandard": "gnu99",
+        "intelliSenseMode": "linux-gcc-x64"
+    }],
+    "version": 4
+}
