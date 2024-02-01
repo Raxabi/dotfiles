@@ -1,9 +1,0 @@
-{
-    "files.associations": {
-        "drw.h": "c",
-        "xft.h": "c",
-        "stdlib.h": "c",
-        "stdio.h": "c",
-        "sstream": "cpp"
-    }
-}
